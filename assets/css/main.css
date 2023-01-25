@@ -22,7 +22,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
+	
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -197,10 +199,10 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #000000, #595959);
+				background-image: -webkit-linear-gradient(to right, #000000, #595959);
+				background-image: -ms-linear-gradient(to right, #000000, #595959);
+				background-image: linear-gradient(to right, #000000, #595959);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -1875,6 +1877,7 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			width: 100%;
+			
 		}
 
 		input[type="submit"].icon:before,
@@ -2536,7 +2539,7 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: #5e42a6;
+					color: rgb(255, 255, 255);
 				}
 
 				.wrapper.style1-alt .icon.major:before {
@@ -3240,27 +3243,28 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: rgb(0, 0, 0);
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background: linear-gradient(180deg, rgba(64,64,64,1) 0%, rgba(89,89,89,1) 100%);;
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			background-color: rgb(20, 20, 20);
 		}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			background-color: #000000;
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background: linear-gradient(180deg, rgba(18,18,18,1) 0%, rgba(45,45,45,1) 100%);
 		}
 
 		.wrapper.style3-alt {
-			background-color: #953d75;
+			background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(89,89,89,1) 100%);
+			
 		}
 
 		.wrapper.fullscreen {
@@ -3423,6 +3427,10 @@ input, select, textarea {
 
 						#header > nav > ul > li a.active {
 							color: #ffffff;
+						}
+
+						a:hover {
+							color: red;
 						}
 
 		@media screen and (max-width: 736px) {
