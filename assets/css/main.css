@@ -2564,6 +2564,11 @@ input, select, textarea {
 
 /* Image */
 
+	#makeSmall {
+		width: 346.66px;
+		height: 100%;
+	}
+
 	.image {
 		border-radius: 0.25em;
 		border: 0;
@@ -3012,7 +3017,7 @@ input, select, textarea {
 			border-radius: 0;
 			display: block;
 			position: relative;
-			width: 25em;
+			width: 20em;
 		}
 
 			.spotlights > section > .image img {
@@ -3105,6 +3110,13 @@ input, select, textarea {
 				.spotlights > section > .image {
 					width: 100%;
 					height: 50vh;
+					object-fit: scale-down;
+				}
+
+				.bottom {
+					flex-direction: row;
+					display: flex;
+					justify-content: center;
 				}
 
 				.spotlights > section > .content {
@@ -3124,8 +3136,11 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			.spotlights > section > .image {
+				object-fit: scale-down;
 				height: 50vh;
 				min-height: 15em;
+				width: 100%;
+				overflow: hidden;
 			}
 
 			.spotlights > section > .content {
